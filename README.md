@@ -18,6 +18,7 @@
 * **php** = 7.4-fpm при необходимости меняем на нужный в `/docker/php-fpm/Dockerfile`
 * **nginx** = 1.17
 * **postgres** = 12
+* **pgadmin** = dpage/pgadmin4
 * **redis** = 6.2
 * **rabbitmq** = 3-management
 * **elasticsearch** = 7.5.2
@@ -39,3 +40,12 @@
 
 `sudo chown -R www-data:www-data ./var/log`
 
+## pgadmin
+
+Заходим в админку, по умолчанию [localhost:5050](http://localhost:5050/)
+Логин: `admin@admin.com`
+Пароль: `root`
+
+Создаем подключение с БД которую создали через docker-compose, работаем.
+
+Значение `host` указываем `postgres` или так, как прописано название сервиса у вас в docker-compose
