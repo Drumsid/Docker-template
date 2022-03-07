@@ -1,3 +1,4 @@
 /docker/postgres
 /docker/elastic
 /.idea
+/docker/pgadmin
