@@ -1,5 +1,16 @@
 # Тестовый шаблон докера
 
+Перед запуском меняем при необходимоста имя рабочей дериктории которое по умолчанию `/template`, так же меняем названия
+контейнеров которые так же имеют префикс `template`.
+
+Замена  нужна в файлах `docker-compose.yml`, `Makefile`, `/docker/nginx/default.conf`, `/docker/ngnix/Dockerfile`,
+`/docker/php-fpm/Dockerfile`
+
+## Запуск
+
+`make build`
+
+Проверяем в браузере [http://localhost:8082/][localhost]
 
 
 ## Конфиг
@@ -10,11 +21,7 @@
 * **rabbitmq** = 3-management
 * **elasticsearch** = 7.5.2
 
-Перед запуском меняем при необходимоста имя рабочей дериктории которое по умолчанию `/template`, так же меняем названия
-контейнеров которые так же имеют префикс `template`.
 
-Замена  нужна в файлах `docker-compose.yml`, `Makefile`, `/docker/nginx/default.conf`, `/docker/ngnix/Dockerfile`, 
-`/docker/php-fpm/Dockerfile`
 
 ## Возможные проблемы
 
