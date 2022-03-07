@@ -10,7 +10,8 @@
 
 `make build`
 
-Проверяем в браузере [http://localhost:8082/][localhost]
+Проверяем в браузере [localhost:8082](http://localhost:8082/)
+
 
 
 ## Конфиг
